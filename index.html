@@ -1,1 +1,67 @@
-<h1>under development</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midhun P M</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/main.css" />
+    <script>
+        function switchBetweenMode(){
+            let body = document.getElementsByTagName('body')[0];
+            if(body.classList.contains("normal-mode")){
+                body.classList.remove("normal-mode");
+                body.classList.add("dark-mode");
+            } else {
+                body.classList.remove("dark-mode");
+                body.classList.add("normal-mode");
+            }
+        };
+    </script>
+</head>
+<body class="normal-mode">
+   <header>
+        <div class="row">
+            <div class="site-name">
+                <h2>Midhun P M</h2>
+            </div>
+            <div class="mode-changer">
+                <button onclick="switchBetweenMode()">Dark Mode</button>
+            </div>
+        </div>
+   </header>
+   <section class="content">
+    <div class="row">
+        <div class="pic">
+            <img src="./asset/pic.jpg" />
+        </div>
+        <div class="info">
+            <p>Hello !</p>
+            <p>I'm Midhun P M, a full-stack developer with more than seven years of experience</p>
+            <h4>Skills</h4>
+            <ul>
+                <li>Node Js</li>
+                <li>Python</li>
+                <li>PHP</li>
+                <li>JavaScript</li>
+                <li>Typescript</li>
+                <li>Angular</li>
+                <li>Html</li>
+                <li>CSS</li>
+            </ul>
+
+            <h4>Tools</h4>
+            <ul>
+                <li>Docker</li>
+                <li>Vim</li>
+                <li>VsCode</li>
+                <li>Git</li>
+            </ul>
+        </div>
+    </div>
+   </section>
+</body>
+</html>
